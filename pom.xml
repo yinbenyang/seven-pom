@@ -27,11 +27,6 @@
     <maven.deploy.skip>false</maven.deploy.skip>
     <maven.buildnumber.plugin.version>1.4</maven.buildnumber.plugin.version>
     <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
-<!--    <checkstyle.fails.on.error>true</checkstyle.fails.on.error>-->
-<!--    <checkstyle.config.location>http://git.114.org/chenxiaotong/check-style/-/raw/master/checkStyle.xml-->
-<!--    </checkstyle.config.location>-->
-<!--    <checkstyle.header.file>http://git.114.org/chenxiaotong/check-style/-/raw/master/CHECKSTYLE_HEAD-->
-<!--    </checkstyle.header.file>-->
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -254,53 +249,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
       </plugin>
-
-<!--      <plugin>-->
-<!--        <groupId>org.apache.maven.plugins</groupId>-->
-<!--        <artifactId>maven-checkstyle-plugin</artifactId>-->
-<!--        <version>${maven-checkstyle-plugin.version}</version>-->
-<!--        <configuration>-->
-<!--          <encoding>UTF-8</encoding>-->
-<!--          <consoleOutput>true</consoleOutput>-->
-<!--          <includeTestSourceDirectory>true</includeTestSourceDirectory>-->
-<!--          <failOnViolation>${checkstyle.fails.on.error}</failOnViolation>-->
-<!--          <sourceDirectories>-->
-<!--            <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>-->
-<!--            <sourceDirectory>${project.build.testSourceDirectory}</sourceDirectory>-->
-<!--          </sourceDirectories>-->
-<!--          <resourceIncludes>-->
-<!--            **/*.properties,-->
-<!--            **/*.sh,-->
-<!--            **/*.bat,-->
-<!--            **/*.yml,-->
-<!--            **/*.yaml,-->
-<!--            **/*.xml-->
-<!--          </resourceIncludes>-->
-<!--          <resourceExcludes>-->
-<!--            **/.asf.yaml,-->
-<!--            **/checkstyle/**,-->
-<!--            **/.github/**-->
-<!--          </resourceExcludes>-->
-<!--          <excludes>-->
-<!--            **/target/generated-test-sources/**,-->
-<!--            **/generated/*_jmhType*.java,-->
-<!--            **/generated/*_jmhTest.java-->
-<!--            **/generated/*_jmhTest.java-->
-<!--          </excludes>-->
-<!--          <propertyExpansion>-->
-<!--            import.control=http://git.114.org/chenxiaotong/check-style/-/raw/master/importControl.xml-->
-<!--          </propertyExpansion>-->
-<!--        </configuration>-->
-<!--        <executions>-->
-<!--          <execution>-->
-<!--            <id>validate</id>-->
-<!--            <phase>process-sources</phase>-->
-<!--            <goals>-->
-<!--              <goal>check</goal>-->
-<!--            </goals>-->
-<!--          </execution>-->
-<!--        </executions>-->
-<!--      </plugin>-->
     </plugins>
   </build>
 </project>
